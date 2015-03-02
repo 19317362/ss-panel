@@ -1,11 +1,16 @@
 <?php
-//引入配置文件
-require_once 'user_check.php';
+require_once '../lib/config.php';
+require_once '../lib/func/comm.func.php';
+require_once '../lib/func/user.func.php';
+require_once '../lib/class/ss.class.php';
+$uid = $_GET['uid'];
+
+$oo = new ss($uid);
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title><?php echo $site_name;?></title>
+    <title>ShadowX</title>
     <?php include_once 'lib/header.inc.php'; ?>
 </head>
 <body class="skin-blue">
@@ -39,22 +44,16 @@ $unix_time = $oo->get_last_unix_time();
             用户中心
             <small>User Panel</small>
         </h1>
+        <ol class="breadcrumb">
+            <li><a href="index.php"><i class="fa fa-dashboard"></i>ShadowX</a></li>
+            <li class="active">UserCenter</li>
+        </ol>
     </section>
     <!-- Main content -->
     <section class="content">
             <!-- START PROGRESS BARS -->
+            <h2 class="page-header">使用信息</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="box box-solid">
-                        <div class="box-header">
-                            <h3 class="box-title">公告&FAQ</h3>
-                        </div><!-- /.box-header -->
-                        <div class="box-body">
-                           <p>希望大家文明使用，最好不要大数据下载，祝大家上网愉快!</p> 
-                        </div><!-- /.box-body -->
-                    </div><!-- /.box -->
-                </div><!-- /.col (right) -->
-
                 <div class="col-md-6">
                     <div class="box box-solid">
                         <div class="box-header">
@@ -64,7 +63,7 @@ $unix_time = $oo->get_last_unix_time();
                             <p> 已用流量: <?php echo $transfers."MB";?> </p>
                             <div class="progress progress-striped">
                                 <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: <?php echo $used_100; ?>%">
-                                    <span class="sr-only">Transfer</span>
+                                    <span class="sr-only">40% Complete (success)</span>
                                 </div>
                             </div>
                             <p> 可用流量: <?php echo $all_transfer ."GB";?> </p>
@@ -73,23 +72,21 @@ $unix_time = $oo->get_last_unix_time();
                     </div><!-- /.box -->
                 </div><!-- /.col (left) -->
 
-              <div class="col-md-6">
+                <div class="col-md-6">
                     <div class="box box-solid">
                         <div class="box-header">
                             <h3 class="box-title">签到获取流量</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-                            <p> 24小时内可以签到一次 </p>
+                            <p> 剩余流量小于2G 且24小时内未签到才可以签到。 </p>
                             <?php  if($oo->is_able_to_check_in())  { ?>
-                            <p><a class="btn btn-success" href="docheckin.php">签到</a> </p>
+                            <p><a class="btn btn-success btn-flat" href="docheckin.php">签到</a> </p>
                             <?php  }else{ ?>
-                            <p><a class="btn btn-success disabled" href="#">不能签到</a> </p>
+                            <p><a class="btn btn-success btn-flat disabled" href="#">未达到签到要求</a> </p>
                             <?php  } ?>
-                            <p>上次签到时间<code><?php echo date('Y-m-d H:i:s',$oo->get_last_check_in_time());?></code></p>
                         </div><!-- /.box-body -->
                     </div><!-- /.box -->
                 </div><!-- /.col (right) -->
-              
 
                 <div class="col-md-6">
                     <div class="box box-solid">

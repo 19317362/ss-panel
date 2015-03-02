@@ -8,8 +8,8 @@ $c = new Ss\User\InviteCode();
     <?php include_once 'nav.php';?>
 
     <div class="jumbotron">
-        <p class="lead"> 邀请码实时刷新</p>
-        <p>如遇到无邀请码请找已经注册的用户获取。</p>
+        <p class="lead"> 邀请码</p>
+        <p>本服务器完全免费，管理员也是从到处找码过来的，为了保障使用现只开放20个用户，请素质使用，谢谢。</p>
     </div>
 
     <div class="row marketing">

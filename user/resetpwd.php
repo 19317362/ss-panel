@@ -28,6 +28,7 @@ require_once '../lib/config.php';
 <div class="form-box" id="login-box">
 
     <div class="header">重置密码</div>
+<form name="resetpwd" role="form" action="resetpwd_do.php" method="post" onsubmit="return regcheck()" >
 
         <div class="body bg-gray">
             <div class="form-group">

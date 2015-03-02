@@ -57,7 +57,7 @@ include_once '../lib/config.php';
             <a href="login.php" class="text-center">已经注册？请登录</a>
         </div>
     </form>
-
+<!--
     <div class="margin text-center">
         <span>下面的按钮暂时是不可用的</span>
         <br/>
@@ -66,6 +66,7 @@ include_once '../lib/config.php';
         <button class="btn bg-red btn-circle"><i class="fa fa-google-plus"></i></button>
 
     </div>
+-->
 </div>
 
 
