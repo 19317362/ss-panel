@@ -16,7 +16,7 @@ include_once 'lib/slidebar_left.inc.php';  ?>
             <small>User Panel</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.php"><i class="fa fa-dashboard"></i>ShadowX</a></li>
+            <li><a href="index.php"><i class="fa fa-dashboard"></i>FreeShadowSocks</a></li>
             <li class="active">UserCenter</li>
         </ol>
     </section>

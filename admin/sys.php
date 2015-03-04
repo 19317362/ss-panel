@@ -5,7 +5,7 @@ require_once 'user_check.php';
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ShadowX</title>
+    <title>FreeShadowSocks</title>
     <?php include_once 'lib/header.inc.php'; ?>
 </head>
 <body class="skin-blue">

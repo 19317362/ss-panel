@@ -10,7 +10,7 @@ $oo = new ss($uid);
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ShadowX</title>
+    <title>FreeShadowSocks</title>
     <?php include_once 'lib/header.inc.php'; ?>
 </head>
 <body class="skin-blue">
@@ -45,7 +45,7 @@ $unix_time = $oo->get_last_unix_time();
             <small>User Panel</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="index.php"><i class="fa fa-dashboard"></i>ShadowX</a></li>
+            <li><a href="index.php"><i class="fa fa-dashboard"></i>FreeShadowSocks</a></li>
             <li class="active">UserCenter</li>
         </ol>
     </section>
