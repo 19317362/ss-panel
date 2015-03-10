@@ -9,7 +9,8 @@ $c = new Ss\User\InviteCode();
 
     <div class="jumbotron">
         <p class="lead"> 邀请码</p>
-        <p>本服务器完全免费，管理员也是从到处找码过来的，为了保障使用现只开放20个用户，请素质使用，谢谢。</p>
+        <p>畅享自由网络，请素质使用，谢谢！</p>
+	<p class="lead">加入QQ群获取邀请码 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=51e115fcd461295e1b2d08bc0be69890f21e151c5e10b08982c3d1632db23bd0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="SS自由之旅" title="SS自由之旅"></a></p>
     </div>
 
     <div class="row marketing">
