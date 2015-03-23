@@ -50,9 +50,6 @@ $unix_time = $oo->get_last_unix_time();
                             <h3 class="box-title">公告&FAQ</h3>
                         </div><!-- /.box-header -->
                         <div class="box-body">
-			   <p>==============================================================</p>
-                           <p>【通知】服务器被攻击，数据异常，部分数据被修改，请注意保护节点!</p> 
-			   <p>==============================================================</p>
                            <p>希望大家文明使用，最好不要大数据下载，祝大家上网愉快!</p> 
                            <p>在用的童鞋请加入QQ群，大家在使用过程中可以彼此分享交流，定期清理不活跃的用户，并提供邀请码给需要的人，谢谢!</p> 
 <a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=51e115fcd461295e1b2d08bc0be69890f21e151c5e10b08982c3d1632db23bd0"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="SS自由之旅" title="SS自由之旅"></a>
